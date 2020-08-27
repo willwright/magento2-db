@@ -1,4 +1,4 @@
-FROM percona:5.7
+FROM mysql:8
 
 MAINTAINER Will Wright <will@magesmith>
 
@@ -10,4 +10,4 @@ VOLUME /var/lib/mysql
 #
 #   Inject config files at the end to optimize build cache
 #
-COPY etc/mysql/percona-server.conf.d/mysqld.cnf /etc/mysql/percona-server.conf.d/mysqld.cnf
+COPY etc/mysql/mysql-config.cnf /etc/mysql/conf.d/mysql-config.cnf

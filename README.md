@@ -1,8 +1,8 @@
-# Percona for Magento2
+# MySQL for Magento2
 __THIS IS NOT FOR PRODUCTION USE__
 
-## Documentation
-[Percona v5.7](https://hub.docker.com/_/percona)
+## Magento Version Support
+* 2.4
 
 ## Example Usage
 `docker-compose.yaml`
@@ -19,6 +19,9 @@ __THIS IS NOT FOR PRODUCTION USE__
 ```
 `docker run wwright/magento2-db`
 
+## Documentation
+[MySQL v8.0](https://hub.docker.com/_/mysql)
+
 ## Defaults
 port 3306
 
@@ -29,4 +32,4 @@ password and initial catalog are set via the Environment variables.
 
 ## Extensability
 Override with volume mount
-`/etc/mysql/percona-server.conf.d/mysqld.cnf:/etc/mysql/percona-server.conf.d/mysqld.cnf`
+`etc/mysql/mysql-config.cnf:/etc/mysql/conf.d/mysql-config.cnf`
