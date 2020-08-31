@@ -26,28 +26,31 @@
 # For explanations see
 # http://dev.mysql.com/doc/mysql/en/server-system-variables.html
 
+[mysqld]
+bind-address = 0.0.0.0
+
 [mysql]
-innodb_strict_mode=OFF
-character-set-server=utf8
-secure-file-priv=""
-max_connections=1000
-tmp_table_size=8096M
-max_heap_table_size=10000M
-key_buffer_size=128M
-read_buffer_size=32M
-read_rnd_buffer_size=64M
-innodb_log_buffer_size=64M
-innodb_buffer_pool_size=2048M
-innodb_log_file_size=4096M
-innodb_buffer_pool_instances=2
-innodb_open_files=65535
-join_buffer_size=512K
-max_allowed_packet=1024M
-open_files_limit=65535
-innodb_stats_on_metadata=0
-innodb_file_per_table=1
-innodb_lock_wait_timeout=10000
-wait_timeout=86400
-interactive_timeout =86400
-net_read_timeout=86400
-net_write_timeout=86400
+#innodb_strict_mode=OFF
+#character-set-server=utf8
+#secure-file-priv=""
+#max_connections=1000
+#tmp_table_size=8096M
+#max_heap_table_size=10000M
+#key_buffer_size=128M
+#read_buffer_size=32M
+#read_rnd_buffer_size=64M
+#innodb_log_buffer_size=64M
+#innodb_buffer_pool_size=2048M
+#innodb_log_file_size=4096M
+#innodb_buffer_pool_instances=2
+#innodb_open_files=65535
+#join_buffer_size=512K
+#max_allowed_packet=1024M
+#open_files_limit=65535
+#innodb_stats_on_metadata=0
+#innodb_file_per_table=1
+#innodb_lock_wait_timeout=10000
+#wait_timeout=86400
+#interactive_timeout =86400
+#net_read_timeout=86400
+#net_write_timeout=86400
